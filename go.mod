@@ -1,4 +1,4 @@
-module github.com/danbai225/WeChatFerry-go
+module github.com/wzblog/WeChatFerry-go
 
 go 1.20
 
