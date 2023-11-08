@@ -41,6 +41,10 @@ func (c *Client) Recv() (*Response, error) {
 	err = proto.Unmarshal(recv, msg)
 	return msg, err
 }
+func (c *Client) Close() error {
+	c.DisableRecvTxt()
+	return c.socket.Close()
+}
 func (c *Client) IsLogin() bool {
 	err := c.send(genFunReq(Functions_FUNC_IS_LOGIN).build())
 	if err != nil {
