@@ -3,7 +3,7 @@ module github.com/wzblog/WeChatFerry-go
 go 1.20
 
 require (
-	github.com/danbai225/go-logs v0.1.9
+	github.com/danbai225/go-logs v0.3.2
 	go.nanomsg.org/mangos/v3 v3.4.2
 	google.golang.org/protobuf v1.30.0
 )
